@@ -41,4 +41,4 @@ The Customer Billing System interacts with :
 * To search for an account
 
 ## SWOT Analysis
-
+![](SWOT.png)
