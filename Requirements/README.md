@@ -40,3 +40,5 @@ The Customer Billing System interacts with :
 * To print information of all the customers
 * To search for an account
 
+## SWOT Analysis
+
