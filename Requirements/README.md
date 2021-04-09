@@ -32,3 +32,4 @@ Each customer in the system has an account balance, which affects any invoices r
 The Customer Billing System interacts with :
   * Banking applications
   
+![](usecase.png)
