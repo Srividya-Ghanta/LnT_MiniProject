@@ -33,3 +33,10 @@ The Customer Billing System interacts with :
   * Banking applications
   
 ![](usecase.png)
+
+### Features Provided in the Program
+* To create New Account
+* To update the existing account
+* To print information of all the customers
+* To search for an account
+
