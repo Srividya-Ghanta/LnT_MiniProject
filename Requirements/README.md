@@ -42,3 +42,33 @@ The Customer Billing System interacts with :
 
 ## SWOT Analysis
 ![](SWOT.png)
+
+# High and Low Level Requirements
+
+## High Level Requirements
+
+| ID  | Description  | Category  | Status  |
+| --- | ------------ | --------- | ------- |
+| HR01| New customer can create account | Techinal | TBI |
+| HR02| Customer can mantain a Balance | Technical | TBI |
+| HR03| Customer information can be displayed| Technical | TBI|
+| HR03| Customer can pay the bill from e-wallet | Techinal | TBI|
+| HR04| Customer can maintain money in account's wallet| technical|TBI|
+| HR05| The last transaction amount of the custmoer in the store have to be maintained| Technical | TBI|
+| HR06| Customer can opt for home delivery | Technical | FUTURE|
+| HR07| The data should not be lost during failure | Scenario | FUTURE|
+| HR08| The information of the customer sould not be leaked| Scenario | FUTURE|
+| HR09| All the tracsanctions fron the creation of the account have to be maintained | Technical | FUTURE|
+
+## Low Level Requirements
+
+|ID | Description | HRID | Status|
+|---|-------------|------|-------|
+|LR01| For Each new account a new array cell of structure type have to be created| HR01 | TBI|
+|LR02| Balance can be mantanied by creating a structure array each cell holding information of the user and their balance| HR02| TBI|
+|LR03| Customer information can be displayed by printing the structure array| HR03| TBI|
+|LR04| When paying bill the balance attribute is modified and updated| HR04|TBI|
+|LR05| The home delivery option cane be implemented by taking the address of the customer|HR06|FUTURE|
+|LR06| The data can be protected by using file to store all the data|HR07|FUTURE|
+|LR07| The authentication mechanisms have to be implementd to prevent data leakage|HR08|FUTURE|
+|LR08| All the transactionc can be maintained in a file dedicated to that customer|HR08|FUTURE|
