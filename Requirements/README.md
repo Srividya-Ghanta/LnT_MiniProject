@@ -31,6 +31,8 @@ Each customer in the system has an account balance, which affects any invoices r
 ### Integration
 The Customer Billing System interacts with :
   * Banking applications
+  * Firewalls
+  * Authentication gateways
   
 ![](usecase.png)
 
