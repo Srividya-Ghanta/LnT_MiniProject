@@ -1,11 +1,4 @@
- #include<stdio.h>
- #include <string.h>
- #include<stdlib.h>
- int createAccount();
- void searchACustomer(int act_no);
- void payBill(int act_no);
- void printAllCustomers();
- void addBalance(int act_no);
+ #include "Customer_billing.h"
   struct account {
 	char name[100];
 	int acct_no;
@@ -69,7 +62,7 @@ void main(){
     }
       return;
  }
-      int createAccount(int ind){
+    int createAccount(int ind){
           customer[ind].acct_no = id++;
           printf("Enther the name of the customer\n");
           scanf("%s", customer[ind].name);
