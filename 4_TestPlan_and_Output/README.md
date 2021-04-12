@@ -1,4 +1,4 @@
-# High Level Requirements
+# High Level Test Plan
 
 |Test_ID|Description|Expected_input|Expected_output|
 |-------|-----------|--------------|---------------|
