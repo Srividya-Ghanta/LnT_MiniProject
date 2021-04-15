@@ -10,15 +10,13 @@ int cust_count = 0,act_no = 0, id = 1001;
 int i = 0;
 char ch, decision;
 void main(){
-    	printf("  \n\n CUSTOMER BILLING SYSTEM:\n\n");
-	    printf("===============================\n");
-	    printf("\n1:    to add account on list\n");
-	    printf("2:    to search customer account\n");
-        printf("3:  TO pay a bill\n");
-        printf("4: to print info of all customers\n");
+	    printf("1: To add account on list\n");
+	    printf("2: To search customer account\n");
+        printf("3: TO pay a bill\n");
+        printf("4: To print info of all customers\n");
         printf("5: Add balance\n");
         printf("6: exit\n");
-	    printf("\n================================\n");
+
         printf("\nselect what do you want to do?\n");
 	    
     while(1){
@@ -29,7 +27,7 @@ void main(){
                 printf("%d", cust_count);
                 int id = createAccount(i);
                 i += 1;
-                printf("Your Account Number is: %d\n", id);
+                printf("\nYour Account Number is: %d\n\n", id);
                 main();
                 break;
             case '2':
@@ -39,7 +37,7 @@ void main(){
                 main();
                 break;
             case '3':
-                printf("PLease enter the eccaount no");
+                printf("Please enter the account no");
                 scanf("%d", &act_no);
                 payBill(act_no);
                 main();
@@ -70,7 +68,7 @@ void main(){
           scanf("%ld", &customer[ind].mobile_no);
           printf("city\n");
           scanf("%s", customer[ind].city);
-          printf("Hoe much balance you want to maintain\n");
+          printf("How much balance you want to maintain\n");
           scanf("%f", &customer[ind].balance);
           return customer[ind].acct_no;
       }
@@ -81,7 +79,7 @@ void main(){
                   printf("Customer name: %s\n", customer[i].name);
                   printf("Customer mobile number: %ld\n", customer[i].mobile_no);
                   printf("customer city name: %s\n", customer[i].city);
-                  printf("customer old bill amount %.2f\n", customer[i].balance);
+                  printf("Account balance %.2f\n", customer[i].balance);
               }
           }
           return;
@@ -94,6 +92,7 @@ void main(){
               if (customer[i].acct_no == act_no){
                   if (customer[i].balance >= amount){
                       customer[i].balance -= amount;
+                      printf("Updated Balance is: &.2f\n", customer[i].balance);
                   } else {
                       printf("please add balance\n");
                       addBalance(act_no);
@@ -109,6 +108,7 @@ void main(){
           for(int i =0; i < cust_count; i++){
               if (customer[i].acct_no == act_no){
                   customer[i].balance += amount;
+                  printf("Updated account balance: %.2f", customer[i].balance);
               }
           }
           return;
