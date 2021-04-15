@@ -34,18 +34,18 @@ int main()
 
 /* Write all the test functions */ 
 void test_searchACustomer(void) {
-  TEST_ASSERT_EQUAL(searchACustomer(1001));
+  TEST_ASSERT_EQUAL(void, searchACustomer(1001));
   
 }
 
 void test_payBill(void) {
-  TEST_ASSERT_EQUAL(payBill(1001));
+  TEST_ASSERT_EQUAL(void, payBill(1001));
 }
 
 void test_printAllCustomers(void) {
-  TEST_ASSERT_EQUAL(printAllCustomers());
+  TEST_ASSERT_EQUAL(void, printAllCustomers());
 }
 
 void test_addBalance(void) {
-  TEST_ASSERT_EQUAL(addBalance());
+  TEST_ASSERT_EQUAL(void, addBalance());
 }
